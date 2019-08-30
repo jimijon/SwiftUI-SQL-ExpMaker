@@ -1,5 +1,8 @@
 # SwiftUI-SQL-ExpMaker
-This is a self contained view to manage the creation and state of a SQL Where clause. Slider, Picker, and Bindings 
+This is a self contained view to manage the creation and state of a SQL Where clause. 
+
+It is also a good example on using a Slider, a Segment Picker, and various bindings for flexibility and reuse.
+Slider, Picker, and Bindings 
 
 # Installation
 There is one dependency. We use the great slider here:
