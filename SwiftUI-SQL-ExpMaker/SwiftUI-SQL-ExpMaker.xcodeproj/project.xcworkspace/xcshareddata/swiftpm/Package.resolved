@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Sliders",
+        "repositoryURL": "https://github.com/jimijon/sliders",
+        "state": {
+          "branch": null,
+          "revision": "de23877eadaeb99a235b4c99f8808d0bfc59454e",
+          "version": "0.7.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

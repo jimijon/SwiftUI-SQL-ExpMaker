@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		1A9009602318B11E0020965E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A90095E2318B11E0020965E /* LaunchScreen.storyboard */; };
 		1A90096B2318B11E0020965E /* SwiftUI_SQL_ExpMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90096A2318B11E0020965E /* SwiftUI_SQL_ExpMakerTests.swift */; };
 		1A9009762318B11E0020965E /* SwiftUI_SQL_ExpMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9009752318B11E0020965E /* SwiftUI_SQL_ExpMakerUITests.swift */; };
+		1A9009842318B22B0020965E /* SQLSwiftUIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9009832318B22B0020965E /* SQLSwiftUIControl.swift */; };
+		1A9009872318B39F0020965E /* Sliders in Frameworks */ = {isa = PBXBuildFile; productRef = 1A9009862318B39F0020965E /* Sliders */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		1A9009712318B11E0020965E /* SwiftUI-SQL-ExpMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-SQL-ExpMakerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9009752318B11E0020965E /* SwiftUI_SQL_ExpMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SQL_ExpMakerUITests.swift; sourceTree = "<group>"; };
 		1A9009772318B11E0020965E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A9009832318B22B0020965E /* SQLSwiftUIControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLSwiftUIControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9009872318B39F0020965E /* Sliders in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +106,7 @@
 				1A9009532318B11B0020965E /* AppDelegate.swift */,
 				1A9009552318B11B0020965E /* SceneDelegate.swift */,
 				1A9009572318B11B0020965E /* ContentView.swift */,
+				1A9009832318B22B0020965E /* SQLSwiftUIControl.swift */,
 				1A9009592318B11E0020965E /* Assets.xcassets */,
 				1A90095E2318B11E0020965E /* LaunchScreen.storyboard */,
 				1A9009612318B11E0020965E /* Info.plist */,
@@ -152,6 +157,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-SQL-ExpMaker";
+			packageProductDependencies = (
+				1A9009862318B39F0020965E /* Sliders */,
+			);
 			productName = "SwiftUI-SQL-ExpMaker";
 			productReference = 1A9009502318B11B0020965E /* SwiftUI-SQL-ExpMaker.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +232,9 @@
 				Base,
 			);
 			mainGroup = 1A9009472318B11B0020965E;
+			packageReferences = (
+				1A9009852318B39E0020965E /* XCRemoteSwiftPackageReference "sliders" */,
+			);
 			productRefGroup = 1A9009512318B11B0020965E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9009842318B22B0020965E /* SQLSwiftUIControl.swift in Sources */,
 				1A9009542318B11B0020965E /* AppDelegate.swift in Sources */,
 				1A9009562318B11B0020965E /* SceneDelegate.swift in Sources */,
 				1A9009582318B11B0020965E /* ContentView.swift in Sources */,
@@ -594,6 +606,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A9009852318B39E0020965E /* XCRemoteSwiftPackageReference "sliders" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jimijon/sliders";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A9009862318B39F0020965E /* Sliders */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A9009852318B39E0020965E /* XCRemoteSwiftPackageReference "sliders" */;
+			productName = Sliders;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A9009482318B11B0020965E /* Project object */;
 }
